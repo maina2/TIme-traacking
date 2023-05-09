@@ -96,7 +96,7 @@ h5{
 .z0{
     height: 100%;
     z-index: 0;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     
@@ -137,7 +137,23 @@ h5{
     background-color:hsl(43, 84%, 65%) ;
 }
 
-@media screen (765px){
+@media screen and (max-width:375px){
+
+ .maincont {
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: repeat(7,1fr);
+    gap: 10px;
+
+    
+ }
+ .nextcont {
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+
+ }
 
     
 }
